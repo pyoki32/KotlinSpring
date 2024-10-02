@@ -10,6 +10,6 @@ class GetApiController {
 
     @GetMapping("/hello") // GET http://localhost:8080/hello
     fun hello() : String {
-        return "hello kotlin"
+        return "hello kotlin TEST"
     }
 }
