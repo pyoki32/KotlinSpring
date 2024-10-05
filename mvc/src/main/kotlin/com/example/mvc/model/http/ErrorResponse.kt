@@ -17,7 +17,7 @@ data class ErrorResponse(
     var message: String? = null,
     var path: String? = null,
     var timestamp: LocalDateTime? = null,
-    var erros: MutableList<Error>? = mutableListOf()
+    var errors: MutableList<Error>? = mutableListOf()
 )
 
 data class Error(

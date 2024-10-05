@@ -23,11 +23,10 @@ import java.time.LocalDateTime
 class ExceptionApiController {
 
     @GetMapping("/hello")
-    fun hello() {
-        if (true) {
+    fun hello() : String{
             val list = mutableListOf<String>()
-            val temp = list[0]
-        }
+            //val temp = list[0]
+            return "hello"
     }
 
     @GetMapping("")
@@ -76,7 +75,7 @@ class ExceptionApiController {
             this.message = "요청에 에러가 발생하였습니다."
             this.path = request.requestURI.toString()
             this.timestamp = LocalDateTime.now()
-            this.erros = errors
+            this.errors = errors
         }
 
         // 3. ResponseEntity
@@ -109,7 +108,7 @@ class ExceptionApiController {
             this.message = "요청에 에러가 발생하였습니다."
             this.path = request.requestURI.toString()
             this.timestamp = LocalDateTime.now()
-            this.erros = errors
+            this.errors = errors
         }
 
         // 3. ResponseEntity
